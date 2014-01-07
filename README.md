@@ -1,6 +1,6 @@
 # mattashwood.com
 
-[Describe project.]
+This is the default setup for the latest redesign of my personal website. This will serve as a testing ground for using new to me technologies and playing with different interactions.
 
 ## Project Setup
 This project utilizes Playbook, reference Playbook's [setup guide](https://github.com/centresource/generator-playbook#get-started).
@@ -13,18 +13,10 @@ This project utilizes Playbook, reference Playbook's [setup guide](https://githu
 
 ### View the Site Locally
 ````bash
-grunt server
+grunt serve
 ````
 
 ### Check, Test & Build for Production
 ````bash
 grunt
 ````
-
-## Bootstrap Components
-
-### CSS
-- None
-
-### JavaScripts
-- None
