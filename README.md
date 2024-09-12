@@ -1,22 +1,20 @@
-# mattashwood.com
+#mattashwood.com Personal Website
 
-This is the default setup for the latest redesign of my personal website. This will serve as a testing ground for using new to me technologies and playing with different interactions.
+Personal portfolio showcasing work samples and case studies. Currently website is a Google Doc. I'll point it to this once I get some content and samples in place.
 
-## Project Setup
-This project utilizes Playbook, reference Playbook's [setup guide](https://github.com/centresource/generator-playbook#get-started).
+Matt Ashwood
+mattashwood.com
 
-1. Clone this repository
-2. `npm install`
-3. `bower install`
+## Installation
 
-## Usage
+No real dependencies, just BrowserSync to run a local server and inject CSS.
 
-### View the Site Locally
-````bash
-grunt serve
-````
+**Step 1**: Install BrowserSync
+```bash
+$ npm install
+```
 
-### Check, Test & Build for Production
-````bash
-grunt
-````
+**Step 2**: Run BrowserSync
+```bash
+$ npm start
+```
