@@ -1,6 +1,6 @@
 # mattashwood.com Personal Website
 
-Personal portfolio showcasing work samples and case studies. Currently website is a Google Doc. I'll point it to this once I get some content and samples in place.
+Personal portfolio showcasing work samples and case studies. Currently website is a Google Doc. I'll point it to this once I get some content and samples in place. My goal is to make this site fast and accessible, with no dependencies, and minimal css/js. Not sure why, but feels like the right move for now.
 
 Matt Ashwood
 mattashwood.com
