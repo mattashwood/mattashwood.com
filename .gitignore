@@ -36,6 +36,6 @@ Thumbs.db
 *.tar
 *.zip
 
-# Ignore#
+# Ignore files and folders #
 node_modules
 .tmp
