@@ -1,4 +1,6 @@
-# .gitignore for Yeoman-Jekyll projects
+# .gitignore for mattashwood.com
+# This is an old template, so not sure if all of this is necessary
+# or if it matters.
 
 # Ignore hidden folders #
 # This takes care of .tmp, .sass-cache, and many others #
