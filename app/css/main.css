@@ -1,251 +1,310 @@
 :root {
-	/* Color styles */
-	--color-heading: rgba(0, 0, 0, 1);
-	--color-body: rgba(50, 50, 50, 1);
-	--color-subheader: rgba(119, 119, 119, 1);
-	--color-section: rgba(151, 151, 151, 1);
-	--color-background: rgba(252, 252, 252, 1);
-	--color-background-0: rgba(252, 252, 252, 0);
-	--color-link: rgba(90, 146, 153, 1);
-	--color-link-50: rgba(90, 146, 153, 0.9);
+    /* Color styles */
+    --color-heading: rgba(0, 0, 0, 1);
+    --color-body: rgba(50, 50, 50, 1);
+    --color-subheader: rgba(119, 119, 119, 1);
+    --color-section: rgba(151, 151, 151, 1);
+    --color-title: rgba(0, 0, 0, 1);
+    --color-background: rgba(252, 252, 252, 1);
+    --color-background-0: rgba(252, 252, 252, 0);
+    --color-link: rgba(90, 146, 153, 1);
+    --color-link-50: rgba(90, 146, 153, 0.9);
 
-	/* Text-size styles */
-	/* base size: body (16px) */
-	--text-heading: 1.875rem;
-	--text-subheading: 1.2rem;
-	--text-lead: 1.025rem;
-	--text-section-header: 0.875rem;
-	--text-title: 1.25rem;
-	--text-body: 1rem;
+    /* Text-size styles */
+    /* base size: body (16px) */
+    --text-heading: 1.875rem;
+    --text-subheading: 1.2rem;
+    --text-lead: 1.025rem;
+    --text-section-header: 0.875rem;
+    --text-title: 1.25rem;
+    --text-body: 1rem;
 
-	/* Font styles */
-	--font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--font-mono: 'SF Mono', SFMono-Regular, ui-monospace,
-    'DejaVu Sans Mono', Menlo, Consolas, monospace;
-	--font-serif: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
+    /* Font styles */
+    --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    --font-mono: "SF Mono", SFMono-Regular, ui-monospace, "DejaVu Sans Mono",
+        Menlo, Consolas, monospace;
+    --font-serif: -apple-system-ui-serif, ui-serif, "Georgia", serif;
 }
 
 ::selection {
-	background: var(--color-link-50);
-	color: var(--color-background);
+    background: var(--color-link-50);
+    color: var(--color-background);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Color styles */
+        --color-heading: rgba(252, 252, 252, 1);
+        --color-body: rgba(217, 217, 217, 1);
+        --color-subheader: rgba(119, 119, 119, 1);
+        --color-section: rgba(151, 151, 151, 1);
+        --color-title: rgba(217, 217, 217, 1);
+        --color-background: rgba(14, 14, 13, 1);
+        --color-background-0: rgba(14, 14, 13, 0);
+        --color-link: rgba(220, 166, 0, 1);
+        --color-link-50: rgba(220, 166, 0, 0.5);
+    }
+
+    ::selection {
+        background: var(--color-link-50);
+        color: var(--color-background);
+    }
+}
+
+body,
+html {
+    background: var(--color-background);
 }
 
 body {
-	background: var(--color-background);
-	font-family: var(--font-body);
-	font-weight: 300;
-	font-size: 14px;
-	color: var(--color-body);
-	padding: calc(20px + 1vw);
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--color-body);
+    padding: calc(20px + 1vw);
 }
 
-h1, h2, h3, h4, h5, p, ul, ol {
-	max-width: 768px;
-	margin-left: auto;
-	margin-right: auto;
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol {
+    max-width: 640px;
+    margin-left: 0;
+    margin-right: auto;
 }
 
-h1, h2, h3, h4, h5 {
-	small {
-		display: block;
-		color: var(--color-subheader);
-	}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    small {
+        display: block;
+        color: var(--color-subheader);
+    }
 }
 
 p {
-	font-size: var(--text-body);
-	line-height: 180%;
+    font-size: var(--text-body);
+    line-height: 180%;
 }
 
 h1 {
-	font-family: var(--font-serif);
-	font-weight: 400;
-	font-size: var(--text-heading);
-	color: var(--color-heading);
-	margin-top: calc(40px + 1vw);
-	small {
-		font-family: var(--font-body);
-		font-size: var(--text-subheading);
-		font-weight: 300;
-		line-height: 160%;
-	}
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: var(--text-heading);
+    color: var(--color-heading);
+    margin-top: calc(40px + 1vw);
+    small {
+        font-family: var(--font-body);
+        font-size: var(--text-subheading);
+        font-weight: 300;
+        line-height: 160%;
+    }
 }
 
 h2 {
-	font-size: var(--text-section-header);
-	font-family: var(--font-mono);
-	text-transform: uppercase;
-	color: var(--color-section);
-	margin-top: 80px;
-	margin-bottom: 12px
+    font-size: var(--text-section-header);
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    color: var(--color-section);
+    margin-top: 80px;
+    margin-bottom: 12px;
 }
 
-h2, h3, h4, h5 {
-	font-weight: 500;
-	small {
-		display: block;
-		font-size: 90%;
-		line-height: 150%;
-		font-weight: 400;
-		color: var(--color-subheader);
-	}
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+    small {
+        display: block;
+        font-size: 90%;
+        line-height: 150%;
+        font-weight: 400;
+        color: var(--color-subheader);
+    }
 }
 
 .lead {
-	font-size: var(--text-lead);
+    font-size: var(--text-lead);
 }
 
 /* Social links */
 .social {
-	display: flex;
-	list-style: none;
-	gap: 24px;
-	margin: 24px auto;
-	padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    margin-top: 24px;
+    margin-block: 24px;
+    padding: 0;
 
+    a {
+        color: var(--color-body);
+        font-weight: 500;
+        position: relative;
+        text-decoration: none;
+        &:after {
+            content: "";
+            position: absolute;
+            top: calc(100% + 2px);
+            right: 0;
+            left: 0;
+            display: block;
+            height: 1.5px;
+            background: var(--color-link);
+            transition: right 0.2s ease-in-out;
+        }
 
-	a {
-		color: var(--color-body);
-		font-weight: 500;
-		position: relative;
-		text-decoration: none;
-		&:after {
-			content: '';
-			position: absolute;
-			top: calc(100% + 2px);
-			right: 0;
-			left: 0;
-			display: block;
-			height: 1.5px;
-			background: var(--color-link);
-			transition: right 0.2s ease-in-out;
-		}
-
-		&:hover {
-			&:after {
-				right: -10px;
-			}
-		}
-	}
+        &:hover {
+            &:after {
+                right: -10px;
+            }
+        }
+    }
 }
 
 /* List styling */
-.projects, .experience {
-	list-style-type: none;
-	padding: 0;
-	margin-top: 0;
-	margin-bottom: 0;
+.projects,
+.experience {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 
-	h3, p {
-		margin-top: 0;
-	}
+    h3,
+    p {
+        margin-top: 0;
+    }
 
-	h3 {
-		margin-bottom: 2px;
-	}
-	p {
-		margin-bottom: 12px;
-	}
+    h3 {
+        margin-bottom: 2px;
+    }
+    p {
+        margin-bottom: 12px;
+    }
 
-	li {
-		margin-bottom: 40px;
-		display: block;
-	}
+    li {
+        margin-bottom: 40px;
+        display: block;
+    }
 }
 
 .experience li,
 .projects li > a {
-	padding: 24px;
+    padding: 24px;
 }
 
 .experience li,
 .projects li {
-	margin-left: -24px;
-	margin-bottom: 0;
+    margin-left: -24px;
+    margin-bottom: 0;
 }
 
 .projects {
-	li > a {
-		text-decoration: none;
-		color: var(--color-body);
-		display: block;
-		position: relative;
-		border-radius: 8px;
-		background: var(--color-background-0);
-		box-shadow: 0 0px 1px rgba(0,0,0,0.00), 
-			0 1px 2px rgba(0,0,0,0.00), 
-			0 2px 4px rgba(0,0,0,0.00), 
-			0 4px 8px rgba(0,0,0,0.00),
-			0 8px 16px rgba(0,0,0,0.00), 
-			0 16px 32px rgba(0,0,0,0.00);
-		transition: all 0.2s ease-in-out;
+    li > a {
+        text-decoration: none;
+        color: var(--color-body);
+        display: block;
+        position: relative;
+        border-radius: 8px;
+        background: var(--color-background-0);
+        box-shadow:
+            0 0px 1px rgba(0, 0, 0, 0),
+            0 1px 2px rgba(0, 0, 0, 0),
+            0 2px 4px rgba(0, 0, 0, 0),
+            0 4px 8px rgba(0, 0, 0, 0),
+            0 8px 16px rgba(0, 0, 0, 0),
+            0 16px 32px rgba(0, 0, 0, 0);
+        transition: all 0.2s ease-in-out;
 
-		h3 {
-			display: inline-block;
-			position: relative;
-			margin-bottom: 12px;
-			
-			&:after {
-				content: '';
-				position: absolute;
-				top: calc(100% + 2px);
-				right: 0;
-				left: 0;
-				display: block;
-				height: 1.5px;
-				background: var(--color-link);
-				transition: right 0.2s ease-in-out;
-			}
-		}
-		&:before {
-			content: '';
-			position: absolute;
-			top: 24px;
-			right: 12px;
-			left: auto;
-			bottom: auto;
-			height: 25px;
-			opacity: 0;
-			font-size: var(--text-section-header);
-			font-family: var(--font-mono);
-			color: var(--color-link);
-			transition: right 0.2s ease-in-out, opacity 0.2s ease-in-out;
-		}
+        h3 {
+            display: inline-block;
+            position: relative;
+            margin-bottom: 12px;
 
+            &:after {
+                content: "";
+                position: absolute;
+                top: calc(100% + 2px);
+                right: 0;
+                left: 0;
+                display: block;
+                height: 1.5px;
+                background: var(--color-link);
+                transition: right 0.2s ease-in-out;
+            }
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 24px;
+            right: 12px;
+            left: auto;
+            bottom: auto;
+            height: 25px;
+            opacity: 0;
+            font-size: var(--text-section-header);
+            font-family: var(--font-mono);
+            color: var(--color-link);
+            transition:
+                right 0.2s ease-in-out,
+                opacity 0.2s ease-in-out;
+        }
 
-		&:hover {
-			&:before {
-				top: 24px;
-				right: 24px;
-				left: auto;
-				bottom: auto;
-				opacity: 1;
-			}
+        &:hover {
+            &:before {
+                top: 24px;
+                right: 24px;
+                left: auto;
+                bottom: auto;
+                opacity: 1;
+            }
 
-			h3 {
-				&:after {
-					right: -10px;
-				}
-			}
-		}
-	}
+            h3 {
+                &:after {
+                    right: -10px;
+                }
+            }
+        }
+    }
 
-	.soon a {
-		cursor: not-allowed;
-		&:before {
-			content: 'Coming Soon';
-		}
-	}
+    .soon a {
+        cursor: not-allowed;
+        &:before {
+            content: "Coming Soon";
+        }
+    }
 
-	.visit a {
-		&:before {
-			content: 'Visit ↗';
-		}
-	}
+    .visit a {
+        &:before {
+            content: "Visit ↗";
+        }
+    }
 }
 
+.projects a h3,
+.experience h3 {
+    color: var(--color-title);
+}
 
+/* .project {
+    transition: all 0.4s ease-out;
+    filter: blur(0);
+    opacity: 1;
+}
+
+.projects:has(.project:hover) .project:not(:hover) {
+    filter: blur(5px);
+    opacity: 0.3;
+} */
 /* Utility classes */
 .hidden {
-	display: none;
+    display: none;
 }
